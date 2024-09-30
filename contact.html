@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <style>
+        body{
+            background-color: blueviolet;
+            background-image: url("https://cdn.pixabay.com/photo/2016/05/20/16/59/flowers-1405552_1280.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .A{
+            font-size: 100px;
+            color: white;
+            text-align: center;
+        }
+        .c{
+            color:wheat;
+            width:100%;
+            height:100%;
+            padding:40px;
+            text-align: center;
+        }
+.d{
+    padding:40px;
+    font-size:30px;
+}
+.v{
+    text-align: center;
+}
+.modal-content{
+    background-image: url("https://cdn.pixabay.com/photo/2016/10/19/19/09/branches-1753745_1280.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+     }
+     .modal-title{
+        color: white;
+     }
+     .modal-body{
+        color: white;
+
+     }
+     </style>
+
+
+<button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#s25">
+    contact me
+</button>
+<div class="modal" id="s25">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">CONTACT US</h4>
+                <button class="btn btn-close btn-danger" data-bs-dismiss="modal"></button>
+
+            </div>
+            <div class="modal-body">
+                email id--sriakya20@gmail.com<br>
+                phone no--800815xxxx
+        
+            </div>
+            <div class="modal-footer">
+
+                <button class="btn btn-danger" data-bs-dismiss="modal">close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <h1 class="A">CONTACT US</h1>
+<form class="c">
+    <fieldset class="d">
+        <label for="fname">Name:</label>
+        <input type="text" id="fname" name="fname"><br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br><br> 
+        <label for="nmb">Contact:</label>
+        <input type="tel" id="nmb" pattern="[0-9]{3}-[0-9]{4}-[0-9{2}]"><br><br>
+        <button class=" btn btn-outline-danger btn-primary btn-lg">submit</button>
+    </fieldset>
+
+</form>
+</body>
+</html>
